@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2A1A5E;
+    color: white;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #4A3072;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 45px; 
+    width: auto;
+    display: block;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;  
+    transition: 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: #D9B3FF;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #6A4F8E;
+}
+
+.hero h1 {
+    font-size: 32px; 
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 60px 5%;
+}
+
+.project-card {
+    background: #4A3072;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; 
+    background: white;  
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.project-card a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 20px; 
+    transition: 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #D9B3FF;
+}
+
+.fun-section {
+    text-align: center;
+    padding: 50px 10%;
+    background: #6A4F8E;
+}
+
+.fun-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.letterboxd-button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 15px;
+    background: #D9B3FF;
+    color: #2A1A5E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.letterboxd-button:hover {
+    background: white;
+}
+
+.foodie-gallery img {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    text-align: left;
+}
+
+.contact-content a {
+    color: #D9B3FF;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+.contact-image img {
+    width: 80%;
+    max-width: 280px; 
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.resume-section {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #6A4F8E;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #D9B3FF;
+    color: #2A1A5E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    margin-top: 15px;
+}
+
+.resume-button:hover {
+    background-color: white;
+    color: #4A3072;
+}
