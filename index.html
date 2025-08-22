@@ -3,63 +3,618 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MariCarmen's Portfolio</title>
+    <title>MariCarmen Mosso - Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo"><img src="me.jpg" alt="MC Portfolio Logo"></div>
-        <div class="nav-items">
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-dot"></span>
+                MC
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#work" class="nav-link" data-page="work">Work</a></li>
+                <li><a href="#video" class="nav-link" data-page="video">Video</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <div class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi! I'm a graduate student at Northeastern studying Media Innovation and Data Communications. I’m passionate about storytelling, visuals, technology, and strategy in film, advertising, and cybersecurity. I love movies and am creative, driven, and always up for a challenge. Check out some of my work below.</p>
+    <div class="comic-effects">
+        <div class="comic-dots"></div>
+        <div class="comic-lines"></div>
+        <div class="comic-burst"></div>
     </div>
 
-    <div class="projects">
-        <div class="project-card">
-            <a href="https://thescopeboston.org/9596/q-a-changemakers/empowering-small-businesses-eric-esteves-discusses-the-heartbeat-of-bostons-main-streets/" target="_blank">
-                <img src="Screen Shot 2025-02-18 at 5.17.08 PM.png" alt="The Scope Boston">
-                <p>Empowering Small Businesses</p>
-            </a>
+    <div id="home" class="page-content active">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">MariCarmen</span>
+                        <span class="title-line">Mosso</span>
+                        <span class="title-line gradient-text">Media</span>
+                        <span class="title-line">& Data Storytelling</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Graduate student at Northeastern University exploring new technologies and storytelling techniques
+                    </p>
+                    <p class="hero-description">
+                        After earning my undergraduate degree in Communications and Media Studies, I'm now expanding into coding and data-driven storytelling as a Media Innovation and Data Communications grad student at Northeastern.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#work" class="btn btn-primary" data-page="work">
+                            <span class="btn-text">View My Work</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                        <a href="MariCarmen Mosso's Resume.pdf" target="_blank" class="btn btn-secondary">
+                            <span class="btn-text">Download Resume</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-download"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-backdrop"></div>
+                        <img src="me.jpg" alt="MariCarmen Mosso">
+                        <div class="image-overlay">
+                            <div class="overlay-text">Hey there! 👋 This is me at Glaciar Perito Moreno in Argentina</div>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="icon-item" style="--delay: 0s"><i class="fas fa-camera"></i></div>
+                        <div class="icon-item" style="--delay: 0.5s"><i class="fas fa-film"></i></div>
+                        <div class="icon-item" style="--delay: 1s"><i class="fas fa-chart-bar"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="work" class="page-content">
+        <div class="page-header">
+            <div class="section-number">01</div>
+            <h1 class="page-title">
+                <span class="title-small">My</span>
+                <span class="title-large gradient-text">Creative Work</span>
+            </h1>
+            <p class="page-description">
+                Projects using data, film criticism, and cultural research. Most projects explore different aspects of how media influences our world.
+            </p>
         </div>
-        <div class="project-card">
-            <a href="https://sceneinboston.wordpress.com/" target="_blank">
-                <img src="logo_film-removebg-preview.png" alt="Scene in Boston">
-                <p>Scene in Boston</p>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="Capstone FINAL (1).pdf" target="_blank">
-                <img src ="king richard.jpg"
-                <p>Capstone Project (PDF) - Women in Sports Movies</p>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="Solving Industry Problems with Blockchain.pdf" target="_blank">
-                <img src ="charli.jpg"
-                <p>The Music Industry and Blockchain</p>
-            </a>
+        
+        <div class="work-grid">
+            <div class="work-item featured" data-category="research">
+                <img src="Screen Shot 2025-08-21 at 8.56.55 PM.png" alt="Names We Inherit Project" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Data Analysis</span>
+                        <span class="work-year">2025</span>
+                    </div>
+                    <h3 class="work-title">How Movies Shape Baby Names</h3>
+                    <p class="work-description">
+                        Data analysis exploring how popular films influence naming trends across decades. I examined the connection between box office hits and baby name popularity using data and personal stories to uncover cultural patterns.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Explore the Data Story</h3>
+                        <p class="overlay-subtitle">Interactive Analysis</p>
+                        <a href="https://mediainnovation.camd.northeastern.edu/2025/names/mosso/" target="_blank" class="overlay-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="journalism">
+                <img src="Screen Shot 2025-02-18 at 5.17.08 PM.png" alt="The Scope Boston" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Journalism</span>
+                        <span class="work-year">2024</span>
+                    </div>
+                    <h3 class="work-title">Boston Small Business Story</h3>
+                    <p class="work-description">
+                        Profile of Eric Esteves and his work empowering Boston's main street businesses. A look at community resilience and entrepreneurship.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Read the Story</h3>
+                        <p class="overlay-subtitle">Published in The Scope Boston</p>
+                        <a href="https://thescopeboston.org/9596/q-a-changemakers/empowering-small-businesses-eric-esteves-discusses-the-heartbeat-of-bostons-main-streets/" target="_blank" class="overlay-link">
+                            <span>View Article</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="journalism">
+                <img src="logo_film-removebg-preview.png" alt="Scene in Boston" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Wordpress Site</span>
+                        <span class="work-year">2024</span>
+                    </div>
+                    <h3 class="work-title">Scene in Boston</h3>
+                    <p class="work-description">
+                        Spotlight of some films that have been filmed in Boston and the behind the scenes work that makes filming on location possible.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Learn More About Movies Filmed in Boston</h3>
+                        <p class="overlay-subtitle">Film Blog</p>
+                        <a href="https://sceneinboston.wordpress.com/" target="_blank" class="overlay-link">
+                            <span>Visit Blog</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="research">
+                <img src="king richard.jpg" alt="Capstone Project" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Academic Paper</span>
+                        <span class="work-year">2024</span>
+                    </div>
+                    <h3 class="work-title">Women in Sports Cinema</h3>
+                    <p class="work-description">
+                        Academic paper that examines how women are represented in sports films, and the repercussions that have followed. 
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Read the Research</h3>
+                        <p class="overlay-subtitle">Capstone Project</p>
+                        <a href="Capstone FINAL (1).pdf" target="_blank" class="overlay-link">
+                            <span>View Research</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="tech">
+                <img src="charli.jpg" alt="Blockchain Project" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Tech Analysis</span>
+                        <span class="work-year">2024</span>
+                    </div>
+                    <h3 class="work-title">Blockchain & Music Distribution</h3>
+                    <p class="work-description">
+                        Analysis of blockchain applications in music distribution, examining technological disruption and artist empowerment in the digital music industry.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Read the Analysis</h3>
+                        <p class="overlay-subtitle">Industry Research</p>
+                        <a href="Solving Industry Problems with Blockchain.pdf" target="_blank" class="overlay-link">
+                            <span>View Analysis</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="research">
+                <img src="AppleCompetition-FTRHeader_V1-768x381.png" alt="Spotify Analysis" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Data Analysis</span>
+                        <span class="work-year">2023</span>
+                    </div>
+                    <h3 class="work-title">Spotify Revenue Analysis</h3>
+                    <p class="work-description">
+                        R-based analysis of Spotify's quarterly revenue and costs. Discovered surprising insights about profit margins and competition with Apple Music through statistical analysis and data visualization.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Read the Analysis</h3>
+                        <p class="overlay-subtitle">Data Research Project</p>
+                        <a href="MariCarmen Mosso Final _ Quantitative Analysis of Consumer Data.pdf" target="_blank" class="overlay-link">
+                            <span>View Research</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="design">
+                <img src="featured-image-7.png" alt="A24 Cybersecurity Project" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Crisis Communication</span>
+                        <span class="work-year">2024</span>
+                    </div>
+                    <h3 class="work-title">A24 Cybersecurity Playbook</h3>
+                    <p class="work-description">
+                        Strategic crisis communication plan for a hypothetical cyberattack on A24. Designed comprehensive response protocols using visual design and industry-specific considerations.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">View the Playbook</h3>
+                        <p class="overlay-subtitle">Crisis Communication Book</p>
+                        <a href="Playbook (Designed as an actual playbook).pdf" target="_blank" class="overlay-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="analysis">
+                <img src="lady-bird-costumes-03.png" alt="Lady Bird Analysis" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Film Analysis</span>
+                        <span class="work-year">2021</span>
+                    </div>
+                    <h3 class="work-title">Lady Bird Cinematography Analysis</h3>
+                    <p class="work-description">
+                        Academic analysis of Greta Gerwig's cinematography techniques in Lady Bird. Examined how simple camera movements and editing create profound emotional impact in the film's ending sequence.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Read the Analysis</h3>
+                        <p class="overlay-subtitle">Film Studies Paper</p>
+                        <a href="Cinematography in LadyBird.pdf" target="_blank" class="overlay-link">
+                            <span>View Paper</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item" data-category="design">
+                <img src="CRGroup_GLEE_lead.webp" alt="" class="work-image">
+                <div class="work-content">
+                    <div class="work-meta">
+                        <span class="work-type">Communication Critique</span>
+                        <span class="work-year">2021</span>
+                    </div>
+                    <h3 class="work-title">Conflict in Glee</h3>
+                    <p class="work-description">
+                        Communication critique on how conflict is solved and portrayed on the TV show Glee.
+                    </p>
+                </div>
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 class="overlay-title">Read The Paper</h3>
+                        <p class="overlay-subtitle">Use of Bargaining and Forgiveness in Glee</p>
+                        <a href="Research Paper (1).pdf" target="_blank" class="overlay-link">
+                            <span>View Paper</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="fun-section">
-        <h2>Beyond My Work</h2>
-        <p>When I'm not working on media and data projects, I'm watching movies and exploring the best food spots.</p>
-        <a href="https://letterboxd.com/mcmosso/" target="_blank" class="letterboxd-button">Check out my Letterboxd</a>
-        <div class="foodie-gallery">
-            <img src="food.png" alt="Foodie Collage">
+    <div id="about" class="page-content">
+        <div class="page-header">
+            <div class="section-number">02</div>
+            <h1 class="page-title">
+                <span class="title-small">More</span>
+                <span class="title-large gradient-text">About Me</span>
+            </h1>
+            <p class="page-description">
+                What drives me beyond the work: film, TV, music, pop culture, sports, and food.
+            </p>
+        </div>
+        
+        <div class="media-featured">
+            <div class="about-icon">🎭</div>
+            <h3>Media Fan</h3>
+            <p>Here's some of my current obsessions. I'm always consuming something so feel free to email me with TV, movie, music, and gaming recommendations.</p>
+            <div class="current-favorites">
+                <div class="fave-item">
+                    <img src="eden.jpg" alt="Eden">
+                    <span>Just Watched</span>
+                </div>
+                <div class="fave-item">
+                    <img src="8cXMRwCTvUY33rGtTWbJ6EF9UQf.png" alt="Hacks">
+                    <span>Favorite Show of 2025</span>
+                </div>
+                <div class="fave-item">
+                    <img src="peacemake.jpg" alt="Peacemaker">
+                    <span>Currently Watching</span>
+                </div>
+                <div class="fave-item">
+                    <img src="superman-movie-2025-poster-v0-d3ix39go81vd1.png" alt="Superman">
+                    <span>2025 Favorite Movie</span>
+                </div>
+                <div class="fave-item">
+                    <img src="Bad-Bunny-Debi-Tirar-Mas-Fotos.png" alt="Debí Tirar Más Fotos">
+                    <span>2025 Favorite Album</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-grid">
+            <div class="about-section">
+                <div class="about-item large">
+                    <div class="about-icon">🎬</div>
+                    <h3>Movie Watcher</h3>
+                    <p>As a member of AMC A-List, I've seen over 100+ movies in the theater so far this year. Going to the movies is my favorite way to clear my mind, and unplug for a bit. 2 hours where the only thing I have to think about is the film on the big screen and how good this ICEE is.</p>
+                    <div class="about-links">
+                        <a href="https://letterboxd.com/mcmosso/" target="_blank" class="about-link">
+                            <i class="fas fa-film"></i>
+                            My Letterboxd
+                        </a>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">⚾</div>
+                    <h3>Sports Fan</h3>
+                    <p>Mark my words the Mets will win the 2025 world series. Yes I know we're in a slump, and yes I said the same thing last year, but this year I really mean it. LGM. Sometimes I dip my toes in graphic design:</p>
+                    <div class="mets-graphic">
+                        <img src="IMG_6930.jpg" alt="Believe in Miracles - Mets Graphic">
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <div class="about-item">
+                    <div class="about-icon">🍕</div>
+                    <h3>Boston Food Explorer</h3>
+                    <p>Follow my adventures on Instagram <strong>@mceats456</strong> where I document the best spots around Boston, and new and unique snacks, drinks, etc. I'll honestly try whatever so send me a DM if there's anything you're curious to try! I also post lots of pictures of my dog on my stories.</p>
+                    <div class="food-collage">
+                        <img src="food.png" alt="Boston Food Adventures">
+                    </div>
+                    <div class="about-links">
+                        <a href="https://www.instagram.com/mceats456/" target="_blank" class="about-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            @mceats456
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-item dog-section">
+                    <div class="about-icon">🐶</div>
+                    <h3>Dog Mom</h3>
+                    <p>Snoopy was rescued three years ago from West Virgina, and ever since then he has been my bestest friend in the world. He loves to snuggle, roll around in the grass, and drool all over my floor when I'm eating literally anything. Don't worry, he always eats when I eat. His puppy eyes are too persuasive.</p>
+                    <div class="dog-photo">
+                        <img src="IMG_9449 copy.jpeg" alt="Snoopy the dog">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="resume-section">
-        <h2>Want to know more?</h2>
-        <a href="MariCarmen Mosso's Resume.pdf" target="_blank" class="resume-button">View My Resume</a>
+    <div id="video" class="page-content">
+        <div class="page-header">
+            <div class="section-number">03</div>
+            <h1 class="page-title">
+                <span class="title-small">Motion &</span>
+                <span class="title-large gradient-text">Stories</span>
+            </h1>
+            <p class="page-description">
+                Video projects where I explore storytelling through video essays and creative expression.
+            </p>
+        </div>
+        
+        <div class="video-showcase">
+            <div class="video-hero">
+                <div class="video-player">
+                    <div class="video-thumbnail">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CeQQHWzKAoE" 
+                                title="Religious Freedom and LGBTQ+ Descrimination" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen style="border-radius: 0; border: 3px solid #1e293b;"></iframe>
+                    </div>
+                </div>
+                <div class="video-hero-info">
+                    <span class="video-category">Featured Project</span>
+                    <h2>Religious Freedom and LGBTQ+ Descrimination</h2>
+                    <p>An in-depth examination of how religious freedom is often weaponized to discriminate against the LGBTQ+ community.</p>
+                </div>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eYg_7svQ6GQ" 
+                                title="Media Project" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen style="border-radius: 0; border: 2px solid #1e293b;"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-type">News Segment</span>
+                            <span class="video-date">2024</span>
+                        </div>
+                        <h3 class="video-title">How Do Bostonians Feel About Concert Ticket Prices?</h3>
+                        <p class="video-description">As prices continue to rise in Botson, concert tickets are no exception. At what point do tickets become out of reach for young fans in Boston?</p>
+                    </div>
+                </div>
+            
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jsgDPqJseXc" 
+                                title="Cultural Analysis Project" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen style="border-radius: 0; border: 2px solid #1e293b;"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-type">Analysis</span>
+                            <span class="video-date">2022</span>
+                        </div>
+                        <h3 class="video-title">How Women Are Represented in TV</h3>
+                        <p class="video-description">As TV is one of America's favorite pass times, this video explores the almost 100 year history of how women have been portrayed in popular TV shows.</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VixW4IFglA4" 
+                                title="Video Project" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen style="border-radius: 0; border: 2px solid #1e293b;"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-type">Short Film</span>
+                            <span class="video-date">2021</span>
+                        </div>
+                        <h3 class="video-title">Casa</h3>
+                        <p class="video-description">Being thousands of miles away from home, this short film showcases how no matter how far from home one may be, home is always with them in their hearts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div id="contact" class="page-content">
+        <div class="page-header">
+            <div class="section-number">04</div>
+            <h1 class="page-title">
+                <span class="title-small">Let's Create</span>
+                <span class="title-large gradient-text">Something Cool</span>
+            </h1>
+            <p class="page-description">
+                 Want to discuss film? Need data analysis? Just want to chat? Let's connect.
+            </p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email Me</h3>
+                        <p>To learn more about me</p>
+                        <a href="mailto:maricarmenmosso@gmail.com" class="contact-link">maricarmenmosso@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Food Adventures</h3>
+                        <p>Follow my tasting adventures</p>
+                        <a href="https://www.instagram.com/mceats456/" target="_blank" class="contact-link">@mceats456</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Film Discussions</h3>
+                        <p>Let's talk movies and reviews</p>
+                        <a href="https://letterboxd.com/mcmosso/" target="_blank" class="contact-link">@mcmosso</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Send me a message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about yourself" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="contact-footer">
+            <p>Currently based in Boston and sometimes in New Jersey with my best friend Snoopy</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h2 class="footer-title">Want to chat?</h2>
+                    <p class="footer-subtitle">Get to know more about me</p>
+                </div>
+                
+                <div class="social-grid">
+                    <a href="mailto:maricarmenmosso@gmail.com" class="social-item">
+                        <div class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span class="social-label">Email</span>
+                    </a>
+                    <a href="https://letterboxd.com/mcmosso/" target="_blank" class="social-item">
+                        <div class="social-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <span class="social-label">Letterboxd</span>
+                    </a>
+                    <a href="https://www.instagram.com/mceats456/" target="_blank" class="social-item">
+                        <div class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span class="social-label">Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/maricarmen-mosso-6949a8221/" target="_blank" class="social-item">
+                        <div class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <span class="social-label">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MariCarmen Mosso.</p>
+                <div class="footer-links">
+                    <a href="#home" data-page="home">Back to Top</a>
+                    <span class="divider">•</span>
+                    <span>Boston, MA | NJ</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
 </body>
 </html>
