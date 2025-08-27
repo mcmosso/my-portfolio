@@ -146,7 +146,6 @@ class PortfolioManager {
         const form = document.querySelector('.form');
         if (form) {
             form.addEventListener('submit', (e) => {
-                e.preventDefault();
                 
                 const formBtn = form.querySelector('.form-btn');
                 if (formBtn) {
@@ -158,21 +157,6 @@ class PortfolioManager {
                     formBtn.style.pointerEvents = 'none';
                     formBtn.style.opacity = '0.7';
                     
-                    setTimeout(() => {
-                        formBtn.querySelector('.btn-text').textContent = 'Message Sent!';
-                        if (icon) icon.innerHTML = '<i class="fas fa-check"></i>';
-                        formBtn.style.background = 'var(--forest-green)';
-                        
-                        form.reset();
-                        
-                        setTimeout(() => {
-                            formBtn.querySelector('.btn-text').textContent = originalText;
-                            if (icon) icon.innerHTML = '<i class="fas fa-paper-plane"></i>';
-                            formBtn.style.background = '';
-                            formBtn.style.pointerEvents = '';
-                            formBtn.style.opacity = '';
-                        }, 3000);
-                    }, 1500);
                 }
             });
         }
