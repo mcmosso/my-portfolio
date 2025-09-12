@@ -1,3 +1,4 @@
+
 :root {
     --primary-blue: #2563eb;
     --electric-cyan: #06b6d4;
@@ -670,6 +671,7 @@ body {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.4s ease;
+    z-index: 5;
 }
 
 .work-item:hover .work-overlay {
