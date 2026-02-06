@@ -982,6 +982,32 @@ body {
     transform: scale(1.05);
 }
 
+
+.sports-full-width {
+    grid-column: 1 / -1; /* Makes sports section span both columns */
+}
+
+.sports-graphics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sports-graphics {
+        grid-template-columns: 1fr;
+    }
+    
+    .mets-graphic img {
+        height: 400px;
+    }
+}
+
 .video-showcase {
     margin-bottom: 5rem;
 }
