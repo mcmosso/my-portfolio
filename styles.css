@@ -984,7 +984,11 @@ body {
 
 
 .sports-full-width {
-    grid-column: 1 / -1; /* Makes sports section span both columns */
+    grid-column: 1 / -1;
+}
+
+.food-full-width {
+    grid-column: 1 / -1;
 }
 
 .sports-graphics {
@@ -994,11 +998,8 @@ body {
     margin-top: 1rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .sports-graphics {
         grid-template-columns: 1fr;
     }
@@ -1007,6 +1008,7 @@ body {
         height: 400px;
     }
 }
+
 
 .video-showcase {
     margin-bottom: 5rem;
