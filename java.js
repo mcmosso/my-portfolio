@@ -129,9 +129,9 @@ class PortfolioManager {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             
             if (scrollTop > 60) {
-                this.navbar.style.background = 'rgba(13, 14, 17, 0.95)';
+                this.navbar.style.background = 'rgba(11, 12, 15, 1)';
             } else {
-                this.navbar.style.background = 'rgba(13, 14, 17, 0.82)';
+                this.navbar.style.background = 'rgba(11, 12, 15, 0.97)';
             }
         });
     }
