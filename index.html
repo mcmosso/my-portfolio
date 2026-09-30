@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MariCarmen Mosso's Creative Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,13 +13,13 @@
         <div class="nav-container">
             <a href="#home" class="logo">
                 <span class="logo-dot"></span>
-                MC
+                MariCarmen Mosso
             </a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
                 <li><a href="#work" class="nav-link" data-page="work">Work</a></li>
                 <li><a href="#video" class="nav-link" data-page="video">Video</a></li>
-                <li><a href="#about" class="nav-link" data-page="about">About Me</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
                 <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -29,13 +29,7 @@
             </div>
         </div>
     </nav>
-
-    <div class="comic-effects">
-        <div class="comic-dots"></div>
-        <div class="comic-lines"></div>
-        <div class="comic-burst"></div>
-    </div>
-
+ 
     <div id="home" class="page-content active">
         <section class="hero">
             <div class="hero-content">
@@ -43,8 +37,6 @@
                     <h1 class="hero-title">
                         <span class="title-line">MariCarmen</span>
                         <span class="title-line">Mosso</span>
-                        <span class="title-line gradient-text">Media</span>
-                        <span class="title-line">& Data Storytelling</span>
                     </h1>
                     <p class="hero-subtitle">
                       Passionate about the future of storytelling, powered by technology, entertainment, and good food.
@@ -55,42 +47,29 @@
                     <div class="cta-buttons">
                         <a href="#work" class="btn btn-primary" data-page="work">
                             <span class="btn-text">View My Work</span>
-                            <span class="btn-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </span>
                         </a>
                         <a href="MariCarmen Mosso's Resume.pdf" target="_blank" class="btn btn-secondary">
                             <span class="btn-text">Download Resume</span>
-                            <span class="btn-icon">
-                                <i class="fas fa-download"></i>
-                            </span>
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <div class="image-backdrop"></div>
                         <img src="me.jpg" alt="MariCarmen Mosso">
                         <div class="image-overlay">
-                            <div class="overlay-text">Hey there! 👋 This is me at Glaciar Perito Moreno in Argentina</div>
+                            <div class="overlay-text">This is me at Glaciar Perito Moreno in Argentina</div>
                         </div>
-                    </div>
-                    <div class="floating-icons">
-                        <div class="icon-item" style="--delay: 0s"><i class="fas fa-camera"></i></div>
-                        <div class="icon-item" style="--delay: 0.5s"><i class="fas fa-film"></i></div>
-                        <div class="icon-item" style="--delay: 1s"><i class="fas fa-chart-bar"></i></div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
+ 
     <div id="work" class="page-content">
         <div class="page-header">
-            <div class="section-number">01</div>
             <h1 class="page-title">
                 <span class="title-small">My</span>
-                <span class="title-large gradient-text">Creative Work</span>
+                <span class="title-large">Creative Work</span>
             </h1>
             <p class="page-description">
                 Projects using data, film criticism, and cultural research. Most projects explore different aspects of how media influences our world.
@@ -101,21 +80,22 @@
             <div class="work-item featured" data-category="research">
                 <img src="Highway.png" alt="Highway Robbery Title Page" class="work-image">
                 <div class="work-content">
+                    <p class="featured-tag">Featured project</p>
                     <div class="work-meta">
                         <span class="work-type">Interactive Game</span>
                         <span class="work-year">2025</span>
                     </div>
-                    <h3 class="work-title">HIGHWAY ROBBERY</h3>
+                    <h3 class="work-title">Highway Robbery</h3>
                     <p class="work-description">
                         Interactive choice based game where users can select one of three different built out cities and make choices based on historical and situational car-centric scenarios to show that car dependency leaves us with no choice.
                     </p>
                 </div>
                 <div class="work-overlay">
                     <div class="overlay-content">
-                        <h3 class="overlay-title">PLAY HERE</h3>
-                        <p class="overlay-subtitle">Game</p>
+                        <h3 class="overlay-title">Play the Game</h3>
+                        <p class="overlay-subtitle">Interactive Game</p>
                         <a href="https://mcmosso.github.io/Highway-Robbery/" target="_blank" class="overlay-link">
-                            <span> PLAY THE GAME 🎮 </span>
+                            <span>Play the Game</span>
                             <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
@@ -145,7 +125,7 @@
                     </div>
                 </div>
             </div>
-
+ 
                        <div class="work-item" data-category="data journalism">
                 <img src="independent.png" alt="Theaters" class="work-image">
                 <div class="work-content">
@@ -217,7 +197,7 @@
                     </div>
                 </div>
             </div>
-
+ 
            <div class="work-item" data-category="data journalism">
                 <img src="Screen Shot 2025-08-21 at 8.56.55 PM.png" alt="Names We Inherit Project" class="work-image">
                 <div class="work-content">
@@ -250,7 +230,7 @@
                     </div>
                     <h3 class="work-title">AI Takes the Center Stage: Summer Cinema's Three Big Moments</h3>
                     <p class="work-description">
-                         This article is about how artificial intelligence became a creative force in film this summer, highlighting three major moments where AI shaped how movies were made, shown, and imagined..
+                         This article is about how artificial intelligence became a creative force in film this summer, highlighting three major moments where AI shaped how movies were made, shown, and imagined.
                     </p>
                 </div>
                 <div class="work-overlay">
@@ -289,7 +269,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="journalism">
                 <img src="Screen Shot 2025-02-18 at 5.17.08 PM.png" alt="The Scope Boston" class="work-image">
                 <div class="work-content">
@@ -313,7 +293,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="journalism">
                 <img src="logo_film-removebg-preview.png" alt="Scene in Boston" class="work-image">
                 <div class="work-content">
@@ -337,7 +317,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="research">
                 <img src="king richard.jpg" alt="Capstone Project" class="work-image">
                 <div class="work-content">
@@ -361,7 +341,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="tech">
                 <img src="charli.jpg" alt="Blockchain Project" class="work-image">
                 <div class="work-content">
@@ -369,7 +349,7 @@
                         <span class="work-type">Tech Analysis</span>
                         <span class="work-year">2024</span>
                     </div>
-                    <h3 class="work-title">Blockchain & Music Distribution</h3>
+                    <h3 class="work-title">Blockchain &amp; Music Distribution</h3>
                     <p class="work-description">
                         Analysis of blockchain applications in music distribution, examining technological disruption and artist empowerment in the digital music industry.
                     </p>
@@ -385,7 +365,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="research">
                 <img src="AppleCompetition-FTRHeader_V1-768x381.png" alt="Spotify Analysis" class="work-image">
                 <div class="work-content">
@@ -409,7 +389,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="design">
                 <img src="featured-image-7.png" alt="A24 Cybersecurity Project" class="work-image">
                 <div class="work-content">
@@ -433,7 +413,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="analysis">
                 <img src="lady-bird-costumes-03.png" alt="Lady Bird Analysis" class="work-image">
                 <div class="work-content">
@@ -457,7 +437,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="work-item" data-category="design">
                 <img src="CRGroup_GLEE_lead.webp" alt="Glee Communication Analysis" class="work-image">
                 <div class="work-content">
@@ -483,22 +463,20 @@
             </div>
         </div>
     </div>
-
+ 
     <div id="about" class="page-content">
         <div class="page-header">
-            <div class="section-number">02</div>
             <h1 class="page-title">
                 <span class="title-small">More</span>
-                <span class="title-large gradient-text">About Me</span>
+                <span class="title-large">About Me</span>
             </h1>
             <p class="page-description">
-                What drives me beyond the work: film, TV, music, pop culture, sports, and food.
+                What drives me beyond the work: film, TV, music, pop culture, and sports.
             </p>
         </div>
         
         <div class="media-featured">
-            <div class="about-icon">🎭</div>
-            <h3>Media Fan</h3>
+            <h3>Currently Obsessed With</h3>
             <p>Here's some of my current obsessions. I'm always consuming something so feel free to email me with TV, movie, music, and gaming recommendations.</p>
             <div class="current-favorites">
                 <div class="fave-item">
@@ -542,7 +520,6 @@
                 </div>
             </div>
             
-            <!-- Movies and Snoopy side by side -->
             <div class="about-section">
                 <div class="about-item">
                     <div class="about-icon">🎬</div>
@@ -567,33 +544,14 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Eat section at bottom, spans full width -->
-            <div class="about-section food-full-width">
-                <div class="about-item large">
-                    <div class="about-icon">🍕</div>
-                    <h3>Boston Food Explorer</h3>
-                    <p>Follow my adventures on Instagram <strong>@mceats456</strong> where I document the best spots around Boston, and new and unique snacks, drinks, etc. I'll honestly try whatever so send me a DM if there's anything you're curious to try! I also post lots of pictures of my dog on my stories.</p>
-                    <div class="food-collage">
-                        <img src="food.png" alt="Boston Food Adventures">
-                    </div>
-                    <div class="about-links">
-                        <a href="https://www.instagram.com/mceats456/" target="_blank" class="about-link instagram">
-                            <i class="fab fa-instagram"></i>
-                            @mceats456
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-
+ 
     <div id="video" class="page-content">
         <div class="page-header">
-            <div class="section-number">03</div>
             <h1 class="page-title">
-                <span class="title-small">Motion &</span>
-                <span class="title-large gradient-text">Stories</span>
+                <span class="title-small">Motion &amp;</span>
+                <span class="title-large">Stories</span>
             </h1>
             <p class="page-description">
                 Video projects where I explore storytelling through video essays and creative expression.
@@ -607,7 +565,7 @@
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CeQQHWzKAoE" 
                                 title="Religious Freedom and LGBTQ+ Descrimination" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen style="border-radius: 0; border: 3px solid #1e293b;"></iframe>
+                                allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="video-hero-info">
@@ -623,7 +581,7 @@
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eYg_7svQ6GQ" 
                                 title="Media Project" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen style="border-radius: 0; border: 2px solid #1e293b;"></iframe>
+                                allowfullscreen></iframe>
                     </div>
                     <div class="video-info">
                         <div class="video-meta">
@@ -631,7 +589,7 @@
                             <span class="video-date">2024</span>
                         </div>
                         <h3 class="video-title">How Do Bostonians Feel About Concert Ticket Prices?</h3>
-                        <p class="video-description">As prices continue to rise in Botson, concert tickets are no exception. At what point do tickets become out of reach for young fans in Boston?</p>
+                        <p class="video-description">As prices continue to rise in Boston, concert tickets are no exception. At what point do tickets become out of reach for young fans in Boston?</p>
                     </div>
                 </div>
             
@@ -640,7 +598,7 @@
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jsgDPqJseXc" 
                                 title="Cultural Analysis Project" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen style="border-radius: 0; border: 2px solid #1e293b;"></iframe>
+                                allowfullscreen></iframe>
                     </div>
                     <div class="video-info">
                         <div class="video-meta">
@@ -651,13 +609,13 @@
                         <p class="video-description">As TV is one of America's favorite pass times, this video explores the almost 100 year history of how women have been portrayed in popular TV shows.</p>
                     </div>
                 </div>
-
+ 
                 <div class="video-item">
                     <div class="video-thumbnail">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VixW4IFglA4" 
                                 title="Video Project" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen style="border-radius: 0; border: 2px solid #1e293b;"></iframe>
+                                allowfullscreen></iframe>
                     </div>
                     <div class="video-info">
                         <div class="video-meta">
@@ -671,13 +629,12 @@
             </div>
         </div>
     </div>
-
+ 
     <div id="contact" class="page-content">
         <div class="page-header">
-            <div class="section-number">04</div>
             <h1 class="page-title">
                 <span class="title-small">Let's Create</span>
-                <span class="title-large gradient-text">Something Cool</span>
+                <span class="title-large">Something Cool</span>
             </h1>
             <p class="page-description">
                  Want to discuss film? Need data analysis? Just want to chat? Let's connect.
@@ -736,9 +693,6 @@
                     </div>
                     <button type="submit" class="btn btn-primary form-btn">
                         <span class="btn-text">Send Message</span>
-                        <span class="btn-icon">
-                            <i class="fas fa-paper-plane"></i>
-                        </span>
                     </button>
                 </form>
             </div>
@@ -748,7 +702,7 @@
             <p>Currently based in Boston and sometimes in New Jersey with my best friend Snoopy</p>
         </div>
     </div>
-
+ 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-main">
@@ -795,7 +749,7 @@
             </div>
         </div>
     </footer>
-
+ 
     <script src="java.js"></script>
 </body>
 </html>
