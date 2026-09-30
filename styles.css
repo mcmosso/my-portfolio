@@ -268,7 +268,7 @@ img {
     height: 520px;
     object-fit: cover;
     display: block;
-    filter: grayscale(35%) contrast(1.02);
+    filter: grayscale(10%) contrast(1.02);
     transition: filter 0.5s ease;
 }
  
